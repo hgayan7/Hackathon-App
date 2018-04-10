@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map_view"
+        android:background="@drawable/shadow_above"
+        android:layout_alignParentBottom="true">
+
+
+        <ImageView
+            android:id="@+id/emergency_call"
+            android:layout_width="125dp"
+            android:layout_height="25dp"
+            android:background="@drawable/hue_saturation3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" />
+
+        <RelativeLayout
+            android:id="@+id/emergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/emergency_call"
+            android:layout_marginBottom="8dp">
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+
+            <ImageButton
+                android:id="@+id/emergency_01"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/emergency_01"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_below="@+id/emergency_01"
+                    android:text="POLICE"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="4dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_toRightOf="@id/relative2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/emergency_02"
+                    android:layout_width="65dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/emergency_02"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_below="@+id/emergency_02"
+                    android:text="MEDIC"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="4dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/relative3">
+
+                <ImageButton
+                    android:id="@+id/emergency_03"
+                    android:layout_width="65dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/emergency_03"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_below="@+id/emergency_03"
+                    android:text="FIRE"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="4dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/relative4">
+
+                <ImageButton
+                    android:id="@+id/emergency_04"
+                    android:layout_width="65dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/emergency_04"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_marginRight="32dp"
+                    android:layout_below="@+id/emergency_04"
+                    android:text="FAMILY"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4dp"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

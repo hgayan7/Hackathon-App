@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+   android:layout_marginBottom="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="#c8f7c5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="6dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <TextView
+                android:textColor="#113321"
+                android:id="@+id/headline_text"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:textStyle="bold"
+                android:text="Flood all around "
+                android:textSize="18sp"
+                android:maxLines = "1"/>
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignLeft="@+id/headline_text"
+                android:layout_alignStart="@+id/headline_text"
+                android:layout_below="@+id/headline_text"
+                android:background="#a79a9a"
+                />
+
+            <TextView
+                android:textColor="#113321"
+                android:id="@+id/info_text"
+                android:layout_width="230dp"
+                android:layout_height="70dp"
+                android:layout_alignLeft="@+id/empty"
+                android:layout_alignStart="@+id/empty"
+                android:layout_below="@+id/empty"
+                android:text="Thousands of casaulties due to flood"
+                android:maxLines = "4"/>
+
+            <TextView
+                android:textColor="#113321"
+                android:id="@+id/source_text"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/imageView3"
+                android:layout_alignLeft="@+id/info_text"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/info_text"
+                android:text="India Times" />
+
+            <ImageView
+                android:background="#c8f7c5"
+                android:id="@+id/news_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageView5"
+                android:layout_toStartOf="@+id/imageView5"
+                app:srcCompat="@mipmap/app_logo" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/news_image"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/news_image"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                app:srcCompat="@drawable/ic_menu_share" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/imageView3"
+                android:layout_toStartOf="@+id/imageView3"
+                app:srcCompat="@drawable/ic_menu_send" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/empty"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/empty"
+                app:srcCompat="@drawable/ic_menu_slideshow" />
+
+            <TextView
+                android:id="@+id/empty2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_above="@+id/imageView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#a79a9a"
+                android:text="TextView" />
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/sideImage"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/id_imageView"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"/>
+
+                <Button
+                    android:id="@+id/id_bookmark"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/id_imageView"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/ic_bookmark"
+                    android:elevation="10dp"
+                    android:onClick="btnClick"/>
+
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/id_bookmark"
+                    android:layout_toEndOf="@+id/id_bookmark"
+                    android:onClick="btnClick"
+
+                    android:elevation="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ic_share"
+                    android:layout_toRightOf="@+id/id_bookmark" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/news_title"
+                android:text="heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="viewStart"
+
+                android:layout_toStartOf="@id/sideImage"
+                android:layout_margin="5dp"
+                android:gravity="start"
+                android:layout_toLeftOf="@id/sideImage" />
+            <TextView
+                android:id="@+id/news_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="content"
+                android:textAlignment="viewStart"
+
+                android:layout_below="@id/news_title"
+                android:layout_toStartOf="@id/sideImage"
+                android:layout_margin="5dp"
+                android:gravity="start"
+                android:layout_toLeftOf="@id/sideImage" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="8dp"
+                android:layout_below="@id/news_content"
+                android:layout_toStartOf="@id/sideImage"
+                android:layout_toLeftOf="@id/sideImage">
+
+                <TextView
+                    android:id="@+id/id_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Source"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/id_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="20 minutes ago"
+                    android:textColor="@color/colorPrimary"
+
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </RelativeLayout>-->
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="@drawable/gradient2"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="56dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:textColor="#018581"
+        android:paddingLeft="10dp"
+        android:id="@+id/handle_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/participants_rv"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/round_edittext"
+        android:hint="Enter alias for chat" />
+
+    <Button
+        android:textSize="18sp"
+        android:id="@+id/start_chatting_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/handle_et"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/round_button2"
+        android:text="Start Chatting"
+        android:textColor="#ffffff" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/participants_rv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/discovery_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+</RelativeLayout>
+    </LinearLayout>
+</layout>

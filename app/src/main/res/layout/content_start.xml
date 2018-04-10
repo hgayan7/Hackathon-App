@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adroitandroid.p2pchat.MainActivity"
+    android:background="@drawable/gradient"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/relativeLayout">
+
+        <com.skyfishjy.library.RippleBackground
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/content"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="8dp"
+            app:rb_color="#ffffff"
+            app:rb_duration="5000"
+            app:rb_radius="26dp"
+            app:rb_rippleAmount="5"
+            app:rb_scale="6">
+
+            <Button
+                android:onClick="emergency"
+                android:id="@+id/status_button"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/temp_location_text"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+
+                android:background="@drawable/round_button"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Tap           for Help"
+                android:textColor="#f2f2f2"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </com.skyfishjy.library.RippleBackground>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/bottom_layout">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/chatBotButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="goToChatbot"
+            android:src="@drawable/logo_chatbot" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginEnd="62dp"
+            android:layout_toStartOf="@+id/chatBotButton"
+            android:src="@drawable/logo_home" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/newsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@+id/chatBotButton"
+            android:onClick="goToNews"
+            android:src="@drawable/logo_news" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

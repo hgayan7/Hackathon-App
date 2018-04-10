@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_register"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Register" />
+        <item
+            android:id="@+id/nav_signin"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Sign in" />
+        <item
+            android:id="@+id/nav_offlinechat"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Offline chat" />
+        <item
+            android:id="@+id/nav_earthquake"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Earthquake" />
+        <item
+            android:id="@+id/nav_geotag"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="GeoTag" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_addfriend"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Add friend" />
+            <item
+                android:id="@+id/nav_map"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Map" />
+        </menu>
+    </item>
+
+</menu>
