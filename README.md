@@ -2,6 +2,7 @@
 App made for Smart India Hackathon 2018
 This app was made for SIH 2018.This app uses the Near library for P2P chat over wifi direct.
 
+![sih](https://user-images.githubusercontent.com/29502161/44681535-774d4300-aa5e-11e8-8444-06e7e348cfe4.png)
 
 ### Features-
 >Use of accelerometer as siesmometer
